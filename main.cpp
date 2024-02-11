@@ -8,7 +8,9 @@ using namespace std;
 #include "Solver/DFSSolver.h"
 #include "Solver/IDDFSSolver.h"
 #include "Solver/IDAstarSolver.h"
+#include "Solver/BFSSolver.h"
 #include "PatternDatabases/CornerDBMaker.h"
+
 
 int main() {
 
@@ -16,12 +18,12 @@ int main() {
 //    RubiksCubeBitboard object3dArray;
 //    object3dArray.print();
 //
-//    vector<RubiksCube::MOVE> movesToShuffle = object3dArray.randomShuffleCube(6);
+//    vector<RubiksCube::MOVE> movesToShuffle = object3dArray.randomShuffleCube(5);
 //    object3dArray.print();
 //    for(auto move: movesToShuffle) cout<<object3dArray.getMove(move)<<" ";
 //    cout<<'\n';
 //
-//    IDAstarSolver<RubiksCubeBitboard, HashBitboard> idAstarSolver(object3dArray, "TempFileName");
+//    BFSSolver<RubiksCubeBitboard, HashBitboard> idAstarSolver(object3dArray);
 //
 //    vector<RubiksCube::MOVE> movesToSolve = idAstarSolver.solve();
 //

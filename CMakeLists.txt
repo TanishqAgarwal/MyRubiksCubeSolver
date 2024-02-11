@@ -22,4 +22,5 @@ add_executable(MyRubiksCubeSolver main.cpp
         PatternDatabases/math.cpp
         PatternDatabases/CornerPatternDatabase.cpp
         PatternDatabases/CornerDBMaker.h
-        PatternDatabases/CornerDBMaker.cpp)
+        PatternDatabases/CornerDBMaker.cpp
+        Solver/BFSSolver.h)
